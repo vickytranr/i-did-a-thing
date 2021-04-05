@@ -1,6 +1,6 @@
 var canvas;
 var ctx;
-var w = 670;
+var w = 620;
 var h = 10310;
 
 var clicks = 0;
@@ -64,7 +64,7 @@ function animationLoop(){
     function genShape(){
         for (var i=-1;i<sinkCat.length; i++){
         keyClick += 1;
-        ctx.drawImage(sinkCat[i], 10, 10);
+        ctx.drawImage(sinkCat[i],0,0);
         }
     }
 };
@@ -79,7 +79,7 @@ function setUpCanvas(){
     ctx = canvas.getContext("2d");
     canvas.width = w;
     canvas.height = h;
-    canvas.style.border = "solid 1px white";
+    // canvas.style.border = "solid 1px white";
     ctx.fillStyle = "black";
     ctx.fillRect(0,0, canvas.width, canvas.height);
 }
