@@ -1,7 +1,7 @@
 var canvas;
 var ctx;
-var w = 620;
-var h = 10280;
+var w = 660;
+var h = 9880;
 
 
 var aCanvas;
